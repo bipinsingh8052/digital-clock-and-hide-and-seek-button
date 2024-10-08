@@ -9,13 +9,41 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
+
+    <!-- stop watch -->
+    <section class=" main_container">
+        <div class="container">
+            <div class="timer">
+                <h2 class="hour">00</h2>
+                <span>:</span>
+                <h2 class="min">00</h2>
+                <span>:</span>
+                <h2 class="sec">00</h2>
+            </div>
+            <div class="buttons">
+                <div class="stop" onclick="stopbtn()">
+                    <i class="fa-solid fa-stop"></i>
+                </div>
+                <div class="play" onclick="playbtn()">
+
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="reset" onclick="resetbtn()">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- hide and seek -->
+    <!-- <div class="container">
         <div class="form">
             <form action="#">
                 <input type="password" required placeholder="password" id="input">
                 <del  id="icon"><i class="fa-solid fa-eye"></i></del>
             </form>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>

@@ -3,41 +3,104 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.container{
-    height: 1200px;
-    width: 100%;
-    background-color: rgb(58, 39, 39);
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    .form{
-        height: 200px;
-        width: 50%;
-        background-color: blueviolet;
-        border: 1px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        form{
-            height: 40px;
-            border: 0.5px solid black;
-            background-color:rgb(152, 14, 33);
-            padding-left: 10px;
-            padding-right: 10px;
-            input{
-                height: 100%;
-                border: none;
-                outline: none;
-                background-color:rgb(152, 14, 33);
-               &::placeholder{
-                color: whitesmoke;
-               }
-            }
-            i{
-                cursor: pointer;
-                
-            }
-        }
 
+// hide and seek button
+// .container{
+//     height: 1200px;
+//     width: 100%;
+//     background-color: rgb(58, 39, 39);
+//     border: 2px solid black;
+//     display: flex;
+//     justify-content: center;
+//     .form{
+//         height: 200px;
+//         width: 50%;
+//         background-color: blueviolet;
+//         border: 1px solid black;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         form{
+//             height: 40px;
+//             border: 0.5px solid black;
+//             background-color:rgb(152, 14, 33);
+//             padding-left: 10px;
+//             padding-right: 10px;
+//             input{
+//                 height: 100%;
+//                 border: none;
+//                 outline: none;
+//                 background-color:rgb(152, 14, 33);
+//                &::placeholder{
+//                 color: whitesmoke;
+//                }
+//             }
+//             i{
+//                 cursor: pointer;
+                
+//             }
+//         }
+
+//     }
+// }
+
+
+
+.main_container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .container{
+        height: 200px;
+        width: 300px;
+        border: 2px solid black;
+        background-image: url("https://img.freepik.com/premium-photo/grainy-gradient-background-red-white-blue-colors-with-soft-faded-watercolor-border-texture_927344-24167.jpg");
+        background-size: cover;  
+        color: white; 
+        .timer{
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 5px;
+            font-size: 25px;
+            gap: 10px;
+            
+        } 
+        .buttons{
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 10px;
+            .stop{
+                font-size: 20px;
+                border: 0.5px solid rgb(192, 188, 188);
+                padding: 11px 15px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .play{
+                
+                font-size: 25px;
+                padding: 12px 16px;
+                background-color: rgb(157, 18, 18);
+                padding-right: 13px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .reset{
+                font-size: 20px;
+                border: 0.5px solid rgb(172, 167, 167);
+                padding: 10px 12px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        } 
     }
 }
+
+
