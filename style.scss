@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 1200px;
+    width: 100%;
+    background-color: rgb(58, 39, 39);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    .form{
+        height: 200px;
+        width: 50%;
+        background-color: blueviolet;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form{
+            height: 40px;
+            border: 0.5px solid black;
+            background-color:rgb(152, 14, 33);
+            padding-left: 10px;
+            padding-right: 10px;
+            input{
+                height: 100%;
+                border: none;
+                outline: none;
+                background-color:rgb(152, 14, 33);
+               &::placeholder{
+                color: whitesmoke;
+               }
+            }
+            i{
+                cursor: pointer;
+                
+            }
+        }
+
+    }
+}
