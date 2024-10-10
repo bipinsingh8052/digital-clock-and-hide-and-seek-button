@@ -6,7 +6,7 @@
 
 // hide and seek button
 // .container{
-//     height: 1200px;
+//     height: 1000px;
 //     width: 100%;
 //     background-color: rgb(58, 39, 39);
 //     border: 2px solid black;
@@ -45,10 +45,10 @@
 // }
 
 
-
+// stop watch
 .main_container{
     display: flex;
-    height: 100vh;
+    height: 1000px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -100,6 +100,46 @@
                 cursor: pointer;
             }
         } 
+    }
+}
+
+
+// digital clock
+.digit_container{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .maincontainer{
+        height: 200px;
+        width: 400px;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg');
+        background-size: cover;
+        color: white;
+        .timers{
+            height: 70%;
+            width: 100%;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            font-size: 33px;
+            gap: 20px;
+        }
+        .sem{
+
+            height: auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: whitesmoke;
+
+            gap: 45px;
+            // position: absolute;
+        }
     }
 }
 

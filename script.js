@@ -72,8 +72,36 @@ function resetbtn(){
     // let min=document.querySelector(".min");
     // let hour=document.querySelector('.hour');
     // let sec =document.querySelector('.sec');
-    min.textContent="00";
-    hour.textContent="00";
-    sec.textContent="00";
+    a=0;
+    b=0;
+    c=0;
+    hour.textContent=a;
+    sec.textContent=c;
+    min.textContent=b;
+    stopbtn();
 
 }
+
+
+let diH=document.querySelector(".hours");
+let diM=document.querySelector(".mintues");
+let diS=document.querySelector(".seconds");
+console.log(diH,diM,diS);
+setInterval(()=>{
+    let currentTime=new Date();
+    diH.textContent = currentTime.getHours();
+    diM.textContent=currentTime.getMinutes();
+    diS.textContent= currentTime.getSeconds();
+    // let h=0;
+    // let m=0;
+    // let s=0;
+    // s++;
+    // if(s==60){
+    //     m++;
+    // }
+    // if(m==60){
+    //     h++;
+    // }
+
+},1000)
+console.log(diH,diM,diS);
